@@ -6,7 +6,7 @@ interface Developer {
     level: Level
 }
 
-function gradeDeveloper(dev: { level: Level }, newLevel: Level) {
+export function gradeDeveloper(dev: { level: Level }, newLevel: Level) {
     dev.level = newLevel
 }
 
