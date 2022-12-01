@@ -1,4 +1,6 @@
-interface Car {
+// @ts-ignore
+
+export interface ICar {
     wheels: number,
     brand: string,
     type: string,
@@ -8,14 +10,14 @@ interface Car {
     [key: string]: unknown
 }
 
-const car: Car = {
+const car: ICar = {
     wheels: 4,
     brand: 'BMW',
     type: 'sedan',
     // isNew: false
 }
 
-const newCar: Car = {
+export const newCar: ICar = {
     wheels: 4,
     brand: 'Audi',
     type: 'sedan',
