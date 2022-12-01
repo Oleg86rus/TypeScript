@@ -31,7 +31,7 @@ function example3(x: number[] | Date) {
 type Fish = { swim: () => void}
 type Bird = { fly: () => void}
 
-function move(animal: Fish | Bird) {
+function move1(animal: Fish | Bird) {
     if ('swim' in animal) {
         return animal.swim()
     }
