@@ -7,8 +7,8 @@ const toTupleWith1 = tupleCreator(1)
 const val1 = toTupleWith1(2)
 const val2 = toTupleWith1('2')
 
-export function createMap(list) {
-    return function (cb) {
+export function createMap<T>(list: T[]) {
+    return function<U> (cb: (x: T) => U): U[] {
         const result = []
 
         for (let el of list) {
