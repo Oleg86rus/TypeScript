@@ -18,9 +18,9 @@ function crash(): never {
 }
 // crash()
 
-function avarage(...nums: number[]) {
+export function average(...nums: number[]) {
     const sum = nums.reduce((current, total) => current + total, 0)
     return sum / nums.length
 }
 
-avarage(1, 2, 3, 4)
+average(1, 2, 3, 4)
